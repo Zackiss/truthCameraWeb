@@ -18,7 +18,7 @@ const Navbar = () => {
     <header>
       <nav className={`nav`}>
         <Link href={"/"}>
-          <img src="/public/truthCamLogo.png" alt="TruthCamera logo" className={styles.logo2} />
+          <img src="/truthCamLogo2.png" alt="TruthCamera logo" className={styles.logo2} />
         </Link>
         <div
           onClick={() => setNavActive(!navActive)}
