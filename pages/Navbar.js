@@ -7,7 +7,7 @@ import styles from '../styles/Home.module.css';
 
 const MENU_LIST = [
   { text: "Home", href: "/" },
-  { text: "About Us", href: "/about" },
+  { text: "Team", href: "/team" },
   { text: "Contact", href: "/contact" },
 ];
 const Navbar = () => {

@@ -93,4 +93,16 @@
 .logo2 {
   height: 3.9em;
 }
+.nav__link link{
+  font-size: 18px; 
+  color:#0070f3;
+  position: relative;
+  transition: all 0.2s;
+}
+
+.nav__link:hover{
+ font-weight: bold;
+}
+
+
 
