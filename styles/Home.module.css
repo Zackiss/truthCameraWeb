@@ -80,7 +80,7 @@
 }
 
 .logo {
-  height: 1em;
+  height: 6em;
 }
 
 @media (max-width: 600px) {
@@ -88,4 +88,8 @@
     width: 100%;
     flex-direction: column;
   }
+}
+
+.logo2 {
+  height: 6em;
 }
