@@ -22,7 +22,9 @@ img {
 
 h1,
 h2,
-p,
+p {
+  text-align: center;
+},
 ul {
   margin: 0;
 }
