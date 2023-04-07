@@ -1,7 +1,7 @@
 import Navbar from "./Navbar";
 import "../styles/globals.css";
 
-function Team({ Component, pageProps }) {
+function App({ Component, pageProps }) {
   return (
     <>
       <Navbar />
@@ -10,4 +10,4 @@ function Team({ Component, pageProps }) {
   );
 }
 
-export default Team;
+export default App;
