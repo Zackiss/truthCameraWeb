@@ -117,18 +117,19 @@ function DropBox() {
 //       }
 //     })
 // .catch(err=>console.log(err));
+      const Http = new XMLHttpRequest();
+      Http.open("GET", upUrl);
+      Http.send();
+      var status = 0;
+      Http.onreadystatechange = (e) => {
+        var json = JSON.parse(Http.responseText);
+        var results = json.results;
+        for (var x in results) {
+          status = results[x].status;
+        }
+      }
 
-
-
-
-    axios({
-      url: upUrl,
-      method: 'POST',
-  }).then((res)=>{
-    console.log(res);
-    res.json()}).then((res)=>{
-    if(res.status==200){
-      if(res.result){
+      if(status == 200){
         setBoxText("Image is shot with a real camera!");
         setShowFireworks(true);
         setBackground("./checkMark.png");
@@ -138,11 +139,8 @@ function DropBox() {
         setBoxText("No record is found on the blockchain...");
         setBackground("./checkMark.png");
         setTextColor("red");
-        
-        // setBackGroundSrc("./wrongMark.png")
+      // setBackGroundSrc("./wrongMark.png")
       }
-    }
-  }).catch(err=>console.log(err)) 
   }
 
   // const createCss = () => {
