@@ -7,8 +7,7 @@ import styles from '../styles/Home.module.css';
 import { Button } from '@geist-ui/core'
 import styled, { createGlobalStyle } from 'styled-components';
 import Fireworks from './backupFiles/Fireworks'
-
-
+import handleUpload from './handleUpload';
 
 const DropzoneContainer = styled.div`
   width: 400px;
@@ -28,12 +27,18 @@ const UploadMessage = styled.p`
 `;
 
 
-
-
 function DropBox() {
   const [uploadedFiles, setUploadedFiles] = useState([]);
   const [imageSrc, setImageSrc] = useState(null);
   const [showFireworks, setShowFireworks] = useState(false);
+
+  const [isHover, setIsHover] = useState(false);
+
+  const handleMouseEnter = () => {
+     setIsHover(true);
+  };
+
+
 
   // const onDrop = useCallback(async (acceptedFiles) => {
   //   const file = acceptedFiles[0];
@@ -92,7 +97,7 @@ function DropBox() {
     </div>
 
     <div>
-          <Button>Verify</Button>
+          <Button onClick={handleUpload} style={{color:"rgb(47,110,235)",borderColor:isHover?'rgb(47,110,235)':''}} onMouseEnter={handleMouseEnter}><b>Verify</b></Button>
     </div>
 </>
   );

@@ -59,6 +59,7 @@
 
   max-width: 800px;
   margin-top: 3rem;
+  flex-direction: column;
 }
 
 .card {
@@ -144,3 +145,4 @@
   cursor: pointer;
   margin-bottom: 20px;
 }
+

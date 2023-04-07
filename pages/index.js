@@ -3,7 +3,7 @@ import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 // import Navbar from "./Navbar";
 //import { Button } from '@geist-ui/core'
-import {useDropzone} from 'react-dropzone'
+// import {useDropzone} from 'react-dropzone'
 // import styled, { createGlobalStyle } from 'styled-components';
 // import handleUpload from './handleUpload';
 // import handleDrop from './handleDrop'
